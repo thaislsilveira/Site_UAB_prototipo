@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/contraste.css"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/javascript-geral.js"></script>
+	<script type="text/javascript" src="js/fonte.js"></script>
+	<meta name ="description" content="Projeto de criação de site acessível para a Universidade Aberta Polo- Jales">
+	<meta charset="UTF-8">
+	<title>UAB Polo - Jales</title>
+</head>
+<body id="texto" class="body-class" onload="randomNums();">
+<section>
+		<header id="header">
+<!-- Barra que ficará a parte acessível-->
+		<div class="barra-fundo-acessivel-atalhos">
+			<div class="acessibilidade-atalhos">	
+				<ul>
+			        <li><a tabindex="3" href="#noticias" accesskey="1"><span>Ir para o conteúdo (ALT + 1)</span></a></li>
+			        <li><a tabindex="4" href="#menu" accesskey="2"><span>Ir para o menu (ALT + 2)</span></a></li>	
+			        <li><a tabindex="5" href="#rodape" accesskey="3"><span>Ir para o rodapé (ALT + 3)</span></a></li>	
+			    </ul>    
+		  	</div>	
+		</div>  	
+		<div class="barra-fundo-acessivel">
+			<div class="barra-superior">
+	            <ul class="acessibilidade">
+	                <li id="btn-alto-contraste" class="contraste btn-alto-contraste"> 
+	                   <span>Alto contraste</span> <a tabindex="6"> <img alt="ícone do alto contraste" src="imagens/altocontraste.png" width="27" height="29" align="texttop"> </a> 
+	                </li>
+	       	        <li class="fonte"> <span>Tamanho da fonte</span>
+		     		    <ul>
+			                <li> <a tabindex="7" onclick="diminuir()"><img alt="ícone para diminuir fonte" src="imagens/a-menos.png" width="30" height="29" align="texttop"></a> 
+			               </li>
+			                <li> <a tabindex="8" onclick="normal()"><img alt="ícone para voltar a fonte padrão"  src="imagens/a-padrao.png" width="27" height="28" align="texttop"></a> 
+			                </li>
+			                 <li> <a tabindex="9" onclick="aumentar()"><img alt="ícone para aumentar fonte"  src="imagens/a-mais.png" width="27" height="28" align="texttop"></a> 
+			        	     </li>
+		                </ul>
+		            </li>
+	            </ul>
+	        </div>
+	    <div class="form-busca form-busca-off">
+			<form class="form-busca-site" action="//www.devmedia.com.br/busca/">
+				<input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar" tabindex="1">
+				<button class="btn-buscar-top" type="submit"></button>
+			</form>
+		</div>    
+	    </div>  
+	  
+<!-- Logo e o Menu -->
+		<div class="logo-uab">
+				<a tabindex="2" href="index.html">
+					<img id="logo-uab" alt="Logo Polo UAB Jales" src="imagens/uab-logo.png"  width="200px" height="100px"/>
+				</a>
+		</div>
+		<nav id="menu">
+			<ul id="menu-normal">
+				<li><a tabindex="10" href="index.html">Voltar para a Home</a></li>
+	 		</ul>
+		</nav>
+<!-- Ele faz com que uma div não entre na outra -->
+		<div class="clear"></div>
+	</header>
+	<article id="todas-graduacao">
+		<div class="todas-graduacao-geral">
+			<div class="todas-graduacao-geral-si">
+				<img alt="banner do curso de sistemas de informação" src="imagens/sistemas-informacao.png">
+			</div>
+			<div class="todas-graduacao-geral-texto">
+			<h2>Apresentação do Curso</h2>
+				<p>
+					ECursos de Bacharelado em Sistemas de Informação visam a formação de recursos humanos capazes de implementar o uso eficiente das tecnologias de computação, comunicação e informação nas organizações. 
+				</p>
+				<p>
+					Esses cursos reúnem conhecimentos da computação e da administração, e possuem um enfoque prático. Os alunos realizam estágios e/ou um trabalho de diplomação que contribua para a melhoria da automação, do desempenho, da eficiência e da racionalização dos serviços administrativos das organizações.
+				</p>	
+
+			<h2>Objetivo</h2>
+
+				<p>
+					Hoje em dia tudo envolve informação, comunicação e computação. Por exemplo jogos eletrônicos, software para telefone celular, software embutido em equipamentos eletrônicos como elevadores e máquinas de lavar, lojas ou comunidades virtuais, aparelhos e sistemas médicos, som e imagem digitais. Ou seja, a atuação dos profissionais de Sistemas de Informação é muito variada. A tendência é que trabalhem no desenvolvimento de novas tecnologias, sistemas ou outros recursos de informação, comunicação e computação, para facilitar a vida das pessoas, ou para tornar as empresas mais eficientes e lucrativas.
+				</p>
+				<p>
+					Os profissionais formados em Sistemas de Informação poderão atuar como pesquisadores em universidades, como colaboradores de empresas, ou criando suas próprias empresas.
+				<p>
+
+			<h2>Coordenador do curso:</h2>
+			<p>Profa. Dra. Sandra Abib</p>
+
+			<h2>Duração média do curso:</h2>
+			<p>	5 anos</p>
+
+			<h2>Mais informações acesse o site:</h2>
+			<p><a tabindex="11" href="http://www.sead.ufscar.br/">UFSCar - Sistemas de Informação</a></p>
+			</div>
+		</div>			
+	</article>	
+	<div class="clear"></div>
+	<div class="clear"></div>
+	<!-- Rodapé -->
+	    <footer  id="rodape">
+				<div class="clear"></div>	
+					<p>Copyright © Thaís Silveira 2017, todos os direitos reservados.</p>
+					<div class="clear"></div>	
+		</footer>
+</section>
+</body>	
+<script type="text/javascript" src="js/altocontraste.js"></script>				
+</html>

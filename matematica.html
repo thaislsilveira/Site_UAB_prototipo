@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/contraste.css"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/javascript-geral.js"></script>
+	<script type="text/javascript" src="js/fonte.js"></script>
+	<meta name ="description" content="Projeto de criação de site acessível para a Universidade Aberta Polo- Jales">
+	<meta charset="UTF-8">
+	<title>UAB Polo - Jales</title>
+</head>
+<body id="texto" class="body-class" onload="randomNums();">
+<section>
+		<header id="header">
+<!-- Barra que ficará a parte acessível-->
+		<div class="barra-fundo-acessivel-atalhos">
+			<div class="acessibilidade-atalhos">	
+				<ul>
+			        <li><a tabindex="3" href="#noticias" accesskey="1"><span>Ir para o conteúdo (ALT + 1)</span></a></li>
+			        <li><a tabindex="4" href="#menu" accesskey="2"><span>Ir para o menu (ALT + 2)</span></a></li>	
+			        <li><a tabindex="5" href="#rodape" accesskey="3"><span>Ir para o rodapé (ALT + 3)</span></a></li>	
+			    </ul>    
+		  	</div>	
+		</div>  	
+		<div class="barra-fundo-acessivel">
+			<div class="barra-superior">
+	            <ul class="acessibilidade">
+	                <li id="btn-alto-contraste" class="contraste btn-alto-contraste"> 
+	                   <span>Alto contraste</span> <a tabindex="6"> <img alt="ícone do alto contraste" src="imagens/altocontraste.png" width="27" height="29" align="texttop"> </a> 
+	                </li>
+	       	        <li class="fonte"> <span>Tamanho da fonte</span>
+		     		    <ul>
+			                <li> <a tabindex="7" onclick="diminuir()"><img alt="ícone para diminuir fonte" src="imagens/a-menos.png" width="30" height="29" align="texttop"></a> 
+			               </li>
+			                <li> <a tabindex="8" onclick="normal()"><img alt="ícone para voltar a fonte padrão"  src="imagens/a-padrao.png" width="27" height="28" align="texttop"></a> 
+			                </li>
+			                 <li> <a tabindex="9" onclick="aumentar()"><img alt="ícone para aumentar fonte"  src="imagens/a-mais.png" width="27" height="28" align="texttop"></a> 
+			        	     </li>
+		                </ul>
+		            </li>
+	            </ul>
+	        </div>
+	    <div class="form-busca form-busca-off">
+			<form class="form-busca-site" action="//www.devmedia.com.br/busca/">
+				<input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar" tabindex="1">
+				<button class="btn-buscar-top" type="submit"></button>
+			</form>
+		</div>    
+	    </div>  
+	  
+<!-- Logo e o Menu -->
+		<div class="logo-uab">
+				<a tabindex="2" href="index.html">
+					<img id="logo-uab" alt="Logo Polo UAB Jales" src="imagens/uab-logo.png"  width="200px" height="100px"/>
+				</a>
+		</div>
+		<nav id="menu">
+			<ul id="menu-normal">
+				<li><a tabindex="10" href="index.html">Voltar para a Home</a></li>
+	 		</ul>
+		</nav>
+<!-- Ele faz com que uma div não entre na outra -->
+		<div class="clear"></div>
+	</header>
+		<article id="todas-graduacao">
+		<div class="todas-graduacao-geral">
+			<div class="todas-graduacao-geral-mt">
+				<img alt="banner do curso de matemática" src="imagens/banner_matematica.png">
+			</div>
+			<div class="clear"></div>
+			<div class="todas-graduacao-geral-texto">
+			<h2>Apresentação do Curso</h2>
+				<p>
+					A Licenciatura em Matemática, modalidade a distância, foi aprovado pelo Conselho de Ensino, Pesquisa e Extensão da Universidade Federal de Ouro Preto, pela Resolução CEPE No. 2785.
+				</p>
+				<p>
+					Espera-se que o professor formado esteja capacitado para: expressar-se oralmente e por escrito com clareza e precisão; trabalhar em equipes multidisciplinares; compreender, criticar e utilizar novas idéias e tecnologias para a resolução de problemas; utilizar a prática profissional também como fonte de produção de conhecimento; identificar, formular e resolver problemas na sua área de atuação, utilizando o rigor lógico-científico na análise da situação-problema; estabelecer relações entre a Matemática e outras áreas do conhecimento; participar de programas de formação continuada; realizar estudos de pós-graduação e trabalhar na interface da Matemática com outros campos do saber. Espera-se ainda que o profissional tenha a percepção correta do papel social do educador, que sua ação possibilite a transformação do meio social da escola e que seja capaz de socializar o conhecimento matemático e utilizá-lo na formação dos indivíduos para o exercício da cidadania.
+				</p>	
+
+			<h2>Objetivo</h2>
+
+				<p>
+					Promover a qualificação de profissionais para:
+				<p>
+				<ul>
+					<li>Exercer atividades de ensino relativas às áreas que integram o currículo do Ensino Médio e das séries finais do Ensino Fundamental, desenvolvendo reflexão quanto ao fazer pedagógico e suas implicações na realidade social;</li>
+					<li>Obter uma formação teórico-prática na área de Matemática suficiente para atuar de forma crítica em diversos campos de atividade educacional;</li>
+					<li>Dominar os conteúdos disciplinares relativos à docência das diferentes áreas que integram os currículos da Escola Básica bem como as suas respectivas metodologias, recursos e meios, visando ao preparo de ambientes de aprendizagem e à condução de situações educativas;</li>
+					<li>Compreender os fundamentos epistemológicos das teorias que sustentam as propostas pedagógicas para a Escola Básica;</li>
+					<li>Demonstrar postura científica ativa, criativa e reflexiva diante de problemas da educação e especificamente da docência na Educação Básica;</li>
+					<li>Atuar no planejamento, organização e gestão dos Sistemas de Ensino Fundamental e Médio e nas esferas administrativa e pedagógica com competência técnico-científica e ética e democratização das relações sociais na comunidade escolar e fora dela;</li>
+					<li>Contribuir com o desenvolvimento do projeto pedagógico da instituição onde atua, desenvolvendo atividades pedagógicas em consonância com as atividades coletivas, de forma interdisciplinar e de interlocução com os diversos campos do saber e da cultura;</li>
+					<li>Participar de movimentos socio-culturais da comunidade, em geral, e de sua categoria profissional, em particular, exercendo liderança e assumindo compromisso com a transformação social do seu meio.
+					</li>
+				</ul>	
+			<h2>Formas de Avaliação e Ingresso:</h2>
+			<p>A cada disciplina corresponderão atividades específicas e provas cujos critérios serão previamente divulgados. Haverá encontros presenciais nas cidades-polo preferencialmente aos sábados. A aprovação em cada disciplina acontecerá com nota igual ou superior a seis (6,0).</p>
+
+			<h2>Duração média do curso:</h2>
+			<p>	4 anos e meio</p>
+
+			<h2>Mais informações acesse o site:</h2>
+			<p><a tabindex="11" href="http://www.cead.ufop.br/">UFOP - Matemática</a></p>
+			</div>
+		</div>			
+	</article>	
+	<div class="clear"></div>
+	<div class="clear"></div>
+		<!-- Rodapé -->
+	    <footer  id="rodape">
+				<div class="clear"></div>	
+					<p>Copyright © Thaís Silveira 2017, todos os direitos reservados.</p>
+					<div class="clear"></div>	
+		</footer>
+</section>
+</body>	
+<script type="text/javascript" src="js/altocontraste.js"></script>			
+</html>

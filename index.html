@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/menu-responsivo.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/contraste.css"/> 
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/javascript-geral.js"></script>
+	<script type="text/javascript" src="js/fonte.js"></script>
+	<meta name ="description" content="Projeto de criação de site acessível para a Universidade Aberta Polo- Jales">
+	<meta charset="UTF-8">
+	<title>UAB Polo - Jales</title>
+</head>
+<body id="texto" class="body-class" onload="randomNums()">
+<section>
+	<header id="header">
+<!-- Barra que ficará a parte acessível-->
+		<div class="barra-fundo-acessivel-atalhos">
+			<div class="acessibilidade-atalhos">	
+				<ul>
+			        <li><a tabindex="3" href="#noticias" accesskey="1"><span>Ir para o conteúdo (ALT + 1)</span></a></li>
+			        <li><a tabindex="4" href="#menu" accesskey="2"><span>Ir para o menu (ALT + 2)</span></a></li>	
+			        <li><a tabindex="5" href="#rodape" accesskey="3"><span>Ir para o rodapé (ALT + 3)</span></a></li>	
+			    </ul>    
+		  	</div>	
+		</div>  	
+		<div class="barra-fundo-acessivel">
+			<div class="barra-superior">
+	            <ul class="acessibilidade">
+	                <li id="btn-alto-contraste" class="contraste btn-alto-contraste"> 
+	                   <span>Alto contraste</span> <a tabindex="6"> <img alt="ícone do alto contraste" src="imagens/altocontraste.png" width="27" height="29" align="texttop"> </a> 
+	                </li>
+	       	        <li class="fonte"> <span>Tamanho da fonte</span>
+		     		    <ul>
+			                <li> <a tabindex="7" onclick="diminuir()"><img alt="ícone para diminuir fonte" src="imagens/a-menos.png" width="30" height="29" align="texttop"></a> 
+			               </li>
+			                <li> <a tabindex="8" onclick="normal()"><img alt="ícone para voltar a fonte padrão"  src="imagens/a-padrao.png" width="27" height="28" align="texttop"></a> 
+			                </li>
+			                 <li> <a tabindex="9" onclick="aumentar()"><img alt="ícone para aumentar fonte" src="imagens/a-mais.png" width="27" height="28" align="texttop"></a> 
+			        	     </li>
+		                </ul>
+		            </li>
+	            </ul>
+	        </div>
+	    <div class="form-busca form-busca-off">
+			<form class="form-busca-site" action="//www.devmedia.com.br/busca/">
+				<input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar" tabindex="1">
+				<button class="btn-buscar-top" type="submit"></button>
+			</form>
+		</div>    
+	    </div>  
+	  
+<!-- Logo e o Menu -->
+		<div class="logo-uab">
+				<a tabindex="2" href="index.html">
+					<img id="logo-uab" alt="Logo Polo UAB Jales" src="imagens/uab-logo.png"  width="200px" height="100px"/>
+				</a>
+		</div>
+		<div id="menu-responsivo"></div>
+		<nav id="menu">
+			<ul id="menu-normal" class="menu-normal">
+				<li><a class="icon" onclick="menuResponsivo()">MENU &#9776;</a></li>
+				<span>
+					<li><a tabindex="10" href="#noticias">Notícias</a></li>
+					<li><a tabindex="18" href="#quem-somos">Quem somos</a></li>
+					<li><a tabindex="25" href="#graduacao">Graduação</a></li>
+					<li><a tabindex="32" href="#pos-graduacao">Pós-Graduação</a></li>
+					<li><a tabindex="41" href="#vestibular">Vestibular</a></li>
+					<li><a tabindex="48" href="#contato">Contato</a></li>
+					<li><a tabindex="16" href="#localizacao">Localização</a></li>
+				</span>
+	 		</ul>
+		</nav>	
+<!-- Ele faz com que uma div não entre na outra -->
+		<div class="clear"></div>
+	</header>
+	<article>
+		<!-- Notícias -->
+		<div id="noticias">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+				  		<div class="numbertext">1 / 6</div>
+						  <a tabindex="11"  href=""><img alt="foto da primeira aula da turma de formação Pedagógica" src="imagens/pos-formacao.jpg" style="width:100%"></a>
+							  <div class="text">Aula inaugural da Pós-graduação em Formação Pedagógica para a Educação Profissional e Tecnológica - IFSC/CERFEAD<br/>terça-feira, 24 de outubro de 2017</div>
+					</div>
+					<div class="mySlides fade">
+					  	<div class="numbertext">2 / 6</div>
+						 <a tabindex="12" href=""><img alt="foto da turma da UFSCar que realizou uma visita técnica na estação de esgotos da Sabesp" src="imagens/visitasabesp-2017.jpg" style="width:100%"></a>
+							  <div class="text">Visita técnica dos alunos da UFSCar: Lagoa de Tratamento de Esgotos de Jales<br/>quarta-feira, 6 de setembro de 2017</div>  
+					</div>
+					<div class="mySlides fade">
+						 <div class="numbertext">3 / 6</div>
+					 	<a tabindex="13" href=""><img alt="imagem com pessoas conectadas" src="imagens/tutor-ead.jpg" style="width:100%"></a>
+					 	 <div class="text">IFSC divulga resultado final do processo seletivo de Tutor Presencial<br/>quinta-feira, 17 de agosto de 2017</div>
+					</div>
+					<div class="mySlides fade">
+				  		<div class="numbertext">4 / 6</div>
+						  <a tabindex="14" href=""><img alt="imagem de notas musicais" src="imagens/uem-musica.png" style="width:100%"></a>
+							  <div class="text">Inscrições abertas para o evento de extensão "Música e Educação: gêneros musicais, história e comportamento humano"<br/>quarta-feira, 19 de julho de 2017</div>
+					</div>
+					<div class="mySlides fade">
+					  	<div class="numbertext">5 / 6</div>
+						 <a tabindex="15" href=""><img alt="imagem do logo da gestão pública" src="imagens/gestao-publica.jpg" style="width:100%"></a>
+						 <div class="text-transparent"> 
+							  <div class="text">Comunicado aos interessados no Curso de Gestão Pública<br/>segunda-feira, 8 de maio de 2017</div>
+						</div>	  
+					</div>
+					<div class="mySlides fade">
+						 <div class="numbertext">6 / 6</div>
+					 	<a tabindex="16" href=""><img alt="imagem com o logo da colação de grau da UFSCar" src="imagens/colacao-grau-ufscar.jpg" style="width:100%"></a>
+					 	 <div class="text">UFSCar realiza Cerimônia de Colação de Grau dos estudantes na modalidade de Educação a Distância (EaD)<br/>segunda-feira, 27 de março de 2017</div>
+					</div>
+				</div>
+				<br>
+				<div style="text-align:center">
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span>
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+				</div>
+				<div class="clear"></div>	
+					<div class="link-noticia">
+						<a tabindex="17" href="noticias.html">Mais Notícias</a>
+					</div>	
+		</div>
+	<div class="clear"></div>
+<!-- Quem Somos -->
+	<div class="quem-somos--bloco">
+		<div id="quem-somos">
+			<h1>
+				Quem Somos
+			</h1>
+			<div class="conteudo-quem-somos">			
+				<p>O Polo da Universidade Aberta de Jales está em Funcionamento desde 2007.
+		         Atualmente disponibiliza cursos de Educação à Distância, através de Parcerias com Diversas Universidades Federais, levando educação à pessoas
+					com diversas idades a todo noroeste paulista, desde o interior de São Paulo, Minas Gerais e Mato Grosso do sul.
+				</p>
+				<p>	Oferecendo aos seus alunos, infra-estrutura adequada na realização das atividades presenciais e à distância, através de salas com Web Conferência, laboratórios de informática com acesso à internet, salas de aula, laboratório de química, laboratório de matemática e sala de música Ambiente.
+				</p>	
+			</div>		
+		</div>
+		<div class="clear"></div>
+	</div>
+<!-- Graduação -->	
+		<div class="bloco-verde2"> 
+			<div id="graduacao">
+				<div class="clear"></div>	
+				<h1>Graduação</h1>
+				<div class="grow">
+					<a tabindex="19" href="educacao-musical.html">
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de música " src="imagens/musica-branco.png"/>
+									    <h2>Educação Musical</h2>	
+								</div>
+							</div>				
+						</div>	
+					</a>
+				</div>
+				<div class="grow">
+					<a tabindex="20" href="engenharia-ambiental.html">		
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de engenharia ambiental " src="imagens/ambiental-branco.png"/>
+									    <h2>Engenharia Ambiental</h2>	
+								</div>
+							</div>				
+						</div>
+					</a>
+				</div>
+				<div class="grow">
+					<a tabindex="21" href="gestao-publica.html">	
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de gestão pública " src="imagens/gestao-branco.png"/>
+									    <h2>Gestão Pública</h2>	
+								</div>
+							</div>				
+						</div>	
+					</a>
+				</div>
+				<div class="grow">
+					<a tabindex="22" href="matematica.html">		
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de matemática" src="imagens/matematica-branco.png"/>
+									    <h2>Matemática</h2>	
+								</div>
+							</div>				
+						</div>
+					</a>
+				</div>
+				<div class="grow">
+					<a tabindex="23" href="pedagogia.html">		
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de pedagogia" src="imagens/pedagogia-branco.png"/>
+									    <h2>Pedagogia</h2>	
+								</div>
+							</div>				
+						</div>
+					</a>
+				</div>
+				<div class="grow">
+					<a tabindex="24" href="sistemas-informacao.html">			
+						<div class="blo-marcas2">		
+							<div class="padding2">
+								<div class="nome-centro2">
+								   	<img alt="ícone de sistema de informação" src="imagens/sistemas-branco.png"/>
+									    <h2>Sistema de Informação</h2>	
+								</div>
+							</div>				
+						</div>	
+					</a>
+				</div>	
+				<div class="clear"></div>				
+			</div>
+			<div class="clear"></div>	
+		</div>
+		<div class="clear"></div>
+<!-- Pós Graduação -->
+		<div id="pos-graduacao">	
+			<div class="clear"></div>	
+			<h1>Pós-Graduação</h1>
+			<div class="grow">
+				<a  tabindex="26" href="ciencia-tecnologia.html">
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt="ícone de ciência e tecnologia" src="imagens/ciencia-azul.png"/>
+								    <h2 id="texto">Ciência e tecnologia<br/><br/></h2>	
+							</div>
+						</div>				
+					</div>		
+				</a>
+			</div>
+			<div class="grow">
+				<a  tabindex="27" href="educacao-etnico-racial.html">
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt="ícone de educação ético-raciais" src="imagens/etnico-azul.png"/>
+								    <h2 id="texto">Educação para as relações Étnico-Raciais</h2>	
+							</div>
+						</div>				
+					</div>
+				</a>
+			</div>
+			<div class="grow">
+				<a  tabindex="28" href="portuguesa-literatura.html">
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt=" ícone de literatura e português" src="imagens/portugues-azul.png"/>
+								    <h2 id="texto">Ensino de Língua Portuguesa e Literatura</h2>	
+							</div>
+						</div>				
+					</div>	
+				</a>
+			</div>
+			<div class="grow">
+				<a  tabindex="29" href="gestao-publica-pos.html">		
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt="ícone da pós de gestão pública" src="imagens/gestao-azul.png"/>
+								    <h2 id="texto">Gestão Pública<br/><br/></h2>	
+							</div>
+						</div>				
+					</div>	
+				</a>	
+			</div>
+			<div class="grow">
+				<a  tabindex="30" href="gestao-saude.html">
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt="ícone de gestão em saúde" src="imagens/saude-azul.png"/>
+								    <h2 id="texto">Gestão em Saúde<br/><br/></h2>	
+							</div>
+						</div>				
+					</div>	
+				</a>	
+			</div>
+			<div class="grow">
+				<a  tabindex="31" href="formacao-pedagogica.html">
+					<div class="blo-marcas3">		
+						<div class="padding3">
+							<div class="nome-centro2">
+							   	<img alt="ícone de formação pedagógica" src="imagens/distancia-azul.png"/>
+								    <h2 id="texto">Formação Pedagógica em Educação a Distância</h2>	
+							</div>
+						</div>				
+					</div>	
+				</a>		
+			</div>	
+		</div>
+		<div class="clear"></div>
+<!-- Vestibular -->
+		<div class="bloco-verde3"> 
+				<div class="clear"></div>
+			<div id="vestibular">	
+				<h1>Vestibular</h1>
+				<div class="blo-marcas4">		
+						<h2>Graduação</h2>
+					  	    <hr>
+					  	    <div class="vestibular-grad">
+						  	    <ul>
+								  	<li><a tabindex="33" href="http://www.ifsc.edu.br/ensino/2012-01-18-16-58-55"><img alt=" logo IFSC" src="imagens/ifsc.png"/></a></li>
+								  	<li><a tabindex="34" href="http://www.sead.ufscar.br/vestibular-2/"><img alt="logo UFSCar" src="imagens/logoufscar.png"/></a></li>
+								 	<li><a tabindex="35" href="http://ead.utfpr.edu.br/cursos"><img alt="logo UTFPR" src="imagens/logoutfpr.jpg"/></a></li>
+								  	<li><a tabindex="36" href="http://www.unifal-mg.edu.br/processoseletivosisu/cursosgradead"><img alt="logo UNIFAL" src="imagens/logounifal.gif"/></a></li>
+							  	</ul>
+						  </div>
+					</div>				
+				<div class="blo-marcas4">		
+				  	<h2>Pós-Graduação</h2>	
+				  	<hr>
+				  	<div class="vestibular-grad">
+					  	 <ul>
+							<li><a tabindex="37" href="http://www.ifsc.edu.br/ensino/2012-01-18-16-58-55"><img alt=" logo IFSC" src="imagens/ifsc.png"/></a></li>
+							<li><a tabindex="38" href="http://www.sead.ufscar.br/vestibular-2/"><img alt="logo UFSCar" src="imagens/logoufscar.png"/></a></li>
+							<li><a tabindex="39" href="http://ead.utfpr.edu.br/cursos"><img alt="logo UTFPR" src="imagens/logoutfpr.jpg"/></a></li>
+							<li><a tabindex="40" href="http://www.unifal-mg.edu.br/processoseletivosisu/cursosead"><img alt="logo UNIFAL" src="imagens/logounifal.gif"/></a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+<!-- Contatos (Formulário) -->		
+		<div id="contato">
+			<h1>ENTRE EM CONTATO</h1>
+			<form id="prospects_form" name="Formulario" action="" method="" onsubmit="addNums()">
+					<label for="nome">Nome:</label>
+						<input tabindex="42" type="text" id="nome" name="nome" maxlength="10" required="" placeholder="Informe o nome"></p>
+					<label for="telefone">Telefone:</label>
+						<input tabindex="43" type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999"></p>
+					<label for="email">E-mail:</label>
+						<input tabindex="44" type="email" id="email" name="email" placeholder="seunome@dominio.com"></p>
+					<label for="data">Data de Nascimento:</label>
+						<input tabindex="45" type="date" id="data" name="data" min="1980-01-01" max="2017-02-13"></p>
+					<label for="msg">Mensagem:</label>	
+				<textarea tabindex="15.5" name="mensagem" id="mensagem" placeholder="Escreva aqui..." class="placeholder" required=""></textarea></div>
+				<div class="fundo">	
+<!-- Captcha Acessível -->			
+					<div class="captcha">
+						<div class="strong">Qual o resultado ?</div>
+						<div class="clear"></div>
+						<div class="captcha-bloco">
+							<div id="digit1" class="item item-1"></div>
+								<p class="item item-2">+</p>
+							<div id="digit2" class="item item-3"></div>
+							<input tabindex="46" type="text" id="answer" class="item item-4"/>
+							<br>
+						</div>	
+					</div>
+					<div id="status"></div>
+					<div class="clear"></div>
+					<br>
+					<input tabindex="47" class="button-enviar" type="submit" value="enviar" name="enviar">
+				</div>		
+			</form>
+		</div>	
+		<div class="clear"></div>
+		<div class="bloco-verde2">			
+			<div id="localizacao">
+				<div class="titulo-local">
+					<div class="clear"></div>
+					<h1>
+						Av. Brasília, 934 - Cohab Jacb II - Jales/SP CEP: 15.707-638 Telefone: (17) 3621-5504
+					</h1>
+					<div id="map"></div>
+				</div>	
+			</div>
+		</div>			
+	</article>	
+	<div class="clear"></div>
+	<div class="clear"></div>
+	<!-- Rodapé -->
+	    <footer id="rodape">
+				<div class="bloco-rodape">
+					<ul>
+						<li><a tabindex="49" href="#contato"><h1>CONTATO</h1></a></li>
+					</ul>
+				</div>
+				<div class="bloco-rodape">	
+					<ul>
+						<li><a tabindex="50" href="#vestibular"><h1>VESTIBULAR</h1></a></li>
+					</ul>
+				</div>			
+				<div class="bloco-rodape">
+					<ul>
+						<li><a tabindex="51" href="#pos-graduacao"><h1>PÓS-GRADUAÇÃO</h1></a></li>
+					</ul>	
+				</div>
+				<div class="bloco-rodape">
+					<ul>
+						<li><a tabindex="52" href="#graduacao"><h1>GRADUAÇÃO</h1></a></li>
+					</ul>	
+				</div>
+				<div class="bloco-rodape">
+					<ul>		
+						<li><a tabindex="53" href="#quem-somos"><h1>QUEM SOMOS</h1></a></li>
+					</ul>
+				</div>
+				<div class="bloco-rodape">
+					<ul>
+						<li><a tabindex="54" href="#noticia"><h1>NOTÍCIAS</h1></a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>	
+					<p>Copyright © Thaís Silveira 2017, todos os direitos reservados.</p>
+					<div class="clear"></div>	
+		</footer>
+</section>
+<script>
+	/**
+	** Slider
+	*/
+	var slideIndex = 0;
+	showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 5000); // Change image every 5 seconds
+	}
+</script>
+<script>
+	/**
+	** Menu Responsivo
+	*/
+	function menuResponsivo() {
+		var x = document.getElementById("menu-normal");
+		if (x.className === "menu-normal") {
+			x.className += " responsive";
+		} else {
+			x.className = "menu-normal";
+		}
+	}
+</script>
+<!-- Captha javascript -->
+<script>
+	function addNums(){
+		var answer = document.getElementById("answer").value;
+		var digit1 = parseInt(document.getElementById("digit1").innerHTML);
+		var digit2 = parseInt(document.getElementById("digit2").innerHTML);
+		var sum = digit1 + digit2;
+			if(answer == ""){
+			// Se estiver errado //
+	 			alert("Por favor! Adicione os números!");
+			}else if(answer != sum){
+				alert("Sua conta está errada!");
+			}else{
+			// estiver certo //
+				document.getElementById("status").innerHTML = "Correto, agora é seguro enviar o formulário";
+				document.getElementById("answer").value = "";
+			}
+		}
+
+	function randomNums(){
+	//Gera números aleatório //
+		var rand_num1 = Math.floor(Math.random() * 10) + 1;
+		var rand_num2 = Math.floor(Math.random() * 10) + 1;
+		document.getElementById("digit1").innerHTML = rand_num1;
+		document.getElementById("digit2").innerHTML = rand_num2;
+	}
+	$(function() {
+		randomNums();
+	});
+	$("#prospects_form").submit(function(e) {
+		e.preventDefault();
+	});
+</script>
+<!-- Mapa -->						
+<script>
+	function myMap() {
+		var infowindow = new google.maps.InfoWindow();
+		var myLatLng = {lat: -20.2430132, lng: -50.5552294};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 16,
+			center: myLatLng
+		});
+		var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'UAB Polo - Jales'
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.setContent('<div><strong>UAB Polo - Jales</strong><br>' +
+										'Av. Brasília, 934 - Cohab Jacb II - Jales/SP<br>' +
+										'Telefone:  (17) 3621-5504</div>');
+			infowindow.open(map, this);
+		});
+	};
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa4RPk7O8GDZGi1uRLlXWJxpnO2pbGMD0&callback=myMap"></script>
+<script src="js/altocontraste.js"></script>
+	<!--
+	To use this code on your website, get a free API key from Google.
+	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+	-->
+	
+</body>
+</html>

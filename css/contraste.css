@@ -1,0 +1,147 @@
+body.alto-contraste{
+  background-color: #000000;
+}
+
+body.alto-contraste .barra-zul{
+	background: #000000;
+	border: 1px solid #f2f2f2;
+}
+body.alto-contraste .barra-fundo-acessivel{
+    background: #000000;
+	border: 1px solid #f2f2f2;
+}
+body.alto-contraste .barra-fundo-acessivel-atalhos{
+ 	background: #000000;
+}
+body.alto-contraste .active{
+  background: grey;
+}
+body.alto-contraste a:hover{
+    color: grey;
+}
+body.alto-contraste .link-noticia a{
+	color: #fff;
+}
+body.alto-contraste #header{
+	background: #000000;
+}
+body.alto-contraste .bloco-verde{
+	background: #000000;
+	border: 1px solid #f2f2f2;
+}
+body.alto-contraste #quem-somos{
+	background: #fff;
+}
+body.alto-contraste #quem-somos h1{
+	color: #000000;
+}
+body.alto-contraste #quem-somos p{
+	color: #000000;
+}
+body.alto-contraste #pos-graduacao h1 {
+	color: #fff;
+}
+body.alto-contraste #pos-graduacao h2{
+	color: #000000;
+}
+body.alto-contraste #vestibular h1 {
+	color: #000000;
+}
+body.alto-contraste #vestibular h2{
+	color: #000000;
+}
+body.alto-contraste #contato h1 {
+	color: #fff;
+}
+body.alto-contraste #contato label {
+	color: #fff;
+}
+body.alto-contraste  .captcha {
+	background-color: #000000;
+	border: solid 1px #fff;
+}
+body.alto-contraste .fundo .button-enviar:hover{
+	background: grey;
+}
+body.alto-contraste .fundo .button-enviar{
+	background-color: #000000;
+	border: solid 1px #fff;
+}
+body.alto-contraste .quem-somos--bloco{
+	background: #fff;
+	border: 1px solid #f2f2f2;
+}
+body.alto-contraste .blo-marcas2 .padding2:hover {
+    background-color: grey;
+}
+body.alto-contraste .blo-marcas .padding{
+	background: #000000;
+}
+body.alto-contraste .vestibular-grad img{
+	filter: grayscale(100%);
+}
+body.alto-contraste .barra-fundo-acessivel img{
+	filter: grayscale(100%);
+}
+body.alto-contraste .bloco-verde2{
+	border: 1px solid #f2f2f2;
+	background: #000000;
+}
+body.alto-contraste .bloco-verde3{
+	border: 1px solid #f2f2f2;
+	background: #fff;
+}
+
+body.alto-contraste .blo-marcas3 .padding3 img{
+	filter: grayscale(100%);
+}
+
+body.alto-contraste .bloco-verde3 .padding3 img{
+	filter: grayscale(100%);
+}
+body.alto-contraste .frase{
+	background: #000000;
+	border: 1px solid #f2f2f2;
+}
+body.alto-contraste #menu ul li a {
+	color: #fff;
+}
+body.alto-contraste .nome-centro p{
+	color: #000000;
+}
+body.alto-contraste .nome-centro h1{
+	color: #000000;
+}
+body.alto-contraste footer{
+	background: #000000;
+	border: 1px solid #f2f2f2;
+}
+
+/************************************
+* ----------- NOTÍCIAS ----------
+*************************************/
+
+body.alto-contraste  .caminho-site p{
+	color: #fff;
+}
+body.alto-contraste  .caminho-site a{
+	color: #fff;
+}
+body.alto-contraste .todas-noticias-geral h1{
+	color: #fff;
+}
+body.alto-contraste table{
+	color: #fff;
+}
+
+body.alto-contraste #todas-noticias ul li a:hover{
+	color:#fff;
+}
+
+/************************************
+* ----------- GRADUAÇÕES ----------
+*************************************/
+
+body.alto-contraste .todas-graduacao-geral-texto h2{
+	color: #fff;
+}

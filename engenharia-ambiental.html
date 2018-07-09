@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/contraste.css"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/javascript-geral.js"></script>
+	<script type="text/javascript" src="js/fonte.js"></script>
+	<meta name ="description" content="Projeto de criação de site acessível para a Universidade Aberta Polo- Jales">
+	<meta charset="UTF-8">
+	<title>UAB Polo - Jales</title>
+</head>
+<body id="texto" class="body-class" onload="randomNums();">
+<section>
+		<header id="header">
+<!-- Barra que ficará a parte acessível-->
+		<div class="barra-fundo-acessivel-atalhos">
+			<div class="acessibilidade-atalhos">	
+				<ul>
+			        <li><a tabindex="3" href="#noticias" accesskey="1"><span>Ir para o conteúdo (ALT + 1)</span></a></li>
+			        <li><a tabindex="4" href="#menu" accesskey="2"><span>Ir para o menu (ALT + 2)</span></a></li>	
+			        <li><a tabindex="5" href="#rodape" accesskey="3"><span>Ir para o rodapé (ALT + 3)</span></a></li>	
+			    </ul>    
+		  	</div>	
+		</div>  	
+		<div class="barra-fundo-acessivel">
+			<div class="barra-superior">
+	            <ul class="acessibilidade">
+	                <li id="btn-alto-contraste" class="contraste btn-alto-contraste"> 
+	                   <span>Alto contraste</span> <a tabindex="6"> <img alt="ícone do alto contraste" src="imagens/altocontraste.png" width="27" height="29" align="texttop"> </a> 
+	                </li>
+	       	        <li class="fonte"> <span>Tamanho da fonte</span>
+		     		    <ul>
+			                <li> <a tabindex="7" onclick="diminuir()"><img alt="ícone para diminuir fonte" src="imagens/a-menos.png" width="30" height="29" align="texttop"></a> 
+			               </li>
+			                <li> <a tabindex="8" onclick="normal()"><img alt="ícone para voltar a fonte padrão"  src="imagens/a-padrao.png" width="27" height="28" align="texttop"></a> 
+			                </li>
+			                 <li> <a tabindex="9" onclick="aumentar()"><img alt="ícone para aumentar fonte"  src="imagens/a-mais.png" width="27" height="28" align="texttop"></a> 
+			        	     </li>
+		                </ul>
+		            </li>
+	            </ul>
+	        </div>
+	    <div class="form-busca form-busca-off">
+			<form class="form-busca-site" action="//www.devmedia.com.br/busca/">
+				<input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar" tabindex="1">
+				<button class="btn-buscar-top" type="submit"></button>
+			</form>
+		</div>    
+	    </div>  
+	  
+<!-- Logo e o Menu -->
+		<div class="logo-uab">
+				<a tabindex="2" href="index.html">
+					<img id="logo-uab" alt="Logo Polo UAB Jales" src="imagens/uab-logo.png"  width="200px" height="100px"/>
+				</a>
+		</div>
+		<nav id="menu">
+			<ul id="menu-normal">
+				<li><a tabindex="10" href="index.html">Voltar para a Home</a></li>
+	 		</ul>
+		</nav>	
+<!-- Ele faz com que uma div não entre na outra -->
+		<div class="clear"></div>
+	</header>
+	<article id="todas-graduacao">
+		<div class="todas-graduacao-geral">
+			<div class="todas-graduacao-geral-ea">
+				<img alt="banner do curso de engenharia ambiental" src="imagens/banner_engenhariaambiental.png">
+			</div>
+			<div class="todas-graduacao-geral-texto">
+			<h2>Apresentação do Curso</h2>
+				<p>
+					A principal atribuição do engenheiro ambiental é elaborar, implantar, avaliar e monitorar projetos voltados ao uso racional dos recursos naturais. Este profissional atua na conservação, preservação e manejo desses recursos conforme as leis ambientais específicas, desenvolve projetos de controle aos impactos ambientais (água, ar, solo e vegetação), auxilia na recuperação de áreas degradadas e em projetos de reflorestamento e, ainda, pode desenvolver estratégias de educação ambiental como subsídio à implementação de qualquer infra-estrutura.
+				</p>
+				<p>
+					Nos dias de hoje, a humanidade busca pelo equilíbrio entre o desenvolvimento econômico e uso sustentável dos recursos disponíveis, por isso, existe a demanda desse profissional como agente de controle e fiscalização da poluição ambiental, seja na disposição de resíduos sólidos (urbanos, recicláveis, de serviços de saúde, industriais, de construção e demolição), no tratamento de efluentes líquidos (águas residuárias) ou nos sistema de controle às fontes de poluição como planejar a redução da emissão de gases pelas indústrias ou auxiliar em programas de monitoramento de poluentes atmosféricos.
+				</p>
+				<p>
+					No ensino superior, o engenheiro ambiental pode ministrar disciplinas, desenvolver pesquisas, estabelecer parcerias com iniciativa privada pela instituição de ensino e representar essa instituição em comitês sobre meio ambiente.
+				</p>	
+
+			<h2>Objetivo</h2>
+
+				<p>
+					Formar profissionais para atuar na conservação, preservação e manejo desses recursos conforme as leis ambientais específicas, desenvolver projetos de controle aos impactos ambientais (água, ar, solo e vegetação), auxiliar na recuperação de áreas degradadas e em projetos de reflorestamento e, ainda, poder desenvolver estratégias de educação ambiental como subsídio à implementação de qualquer infra-estrutura.
+				</p>	
+
+			<h2>Duração média do curso:</h2>
+
+			<p>	6 anos</p>
+
+			<h2>Mais informações acesse o site:</h2>
+			<p><a tabindex="11" href="http://www.sead.ufscar.br/">UFSCar - Engenharia Ambiental</a></p>
+			</div>
+		</div>			
+	</article>	
+	<div class="clear"></div>
+	<div class="clear"></div>
+		<!-- Rodapé -->
+	    <footer  id="rodape">
+				<div class="clear"></div>	
+					<p>Copyright © Thaís Silveira 2017, todos os direitos reservados.</p>
+					<div class="clear"></div>	
+		</footer>
+</section>
+</body>	
+<script type="text/javascript" src="js/altocontraste.js"></script>			
+</html>

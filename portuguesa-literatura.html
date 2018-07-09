@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/> 
+	<link rel="stylesheet" type="text/css" href="css/contraste.css"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/javascript-geral.js"></script>
+	<script type="text/javascript" src="js/fonte.js"></script>
+	<meta name ="description" content="Projeto de criação de site acessível para a Universidade Aberta Polo- Jales">
+	<meta charset="UTF-8">
+	<title>UAB Polo - Jales</title>
+</head>
+<body id="texto" class="body-class" onload="randomNums();">
+<section>
+		<header id="header">
+<!-- Barra que ficará a parte acessível-->
+		<div class="barra-fundo-acessivel-atalhos">
+			<div class="acessibilidade-atalhos">	
+				<ul>
+			        <li><a tabindex="3" href="#noticias" accesskey="1"><span>Ir para o conteúdo (ALT + 1)</span></a></li>
+			        <li><a tabindex="4" href="#menu" accesskey="2"><span>Ir para o menu (ALT + 2)</span></a></li>	
+			        <li><a tabindex="5" href="#rodape" accesskey="3"><span>Ir para o rodapé (ALT + 3)</span></a></li>	
+			    </ul>    
+		  	</div>	
+		</div>  	
+		<div class="barra-fundo-acessivel">
+			<div class="barra-superior">
+	            <ul class="acessibilidade">
+	                <li id="btn-alto-contraste" class="contraste btn-alto-contraste"> 
+	                   <span>Alto contraste</span> <a tabindex="6"> <img alt="ícone do alto contraste" src="imagens/altocontraste.png" width="27" height="29" align="texttop"> </a> 
+	                </li>
+	       	        <li class="fonte"> <span>Tamanho da fonte</span>
+		     		    <ul>
+			                <li> <a tabindex="7" onclick="diminuir()"><img alt="ícone para diminuir fonte" src="imagens/a-menos.png" width="30" height="29" align="texttop"></a> 
+			               </li>
+			                <li> <a tabindex="8" onclick="normal()"><img alt="ícone para voltar a fonte padrão"  src="imagens/a-padrao.png" width="27" height="28" align="texttop"></a> 
+			                </li>
+			                 <li> <a tabindex="9" onclick="aumentar()"><img alt="ícone para aumentar fonte"  src="imagens/a-mais.png" width="27" height="28" align="texttop"></a> 
+			        	     </li>
+		                </ul>
+		            </li>
+	            </ul>
+	        </div>
+	    <div class="form-busca form-busca-off">
+			<form class="form-busca-site" action="//www.devmedia.com.br/busca/">
+				<input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar" tabindex="1">
+				<button class="btn-buscar-top" type="submit"></button>
+			</form>
+		</div>    
+	    </div>  
+	  
+<!-- Logo e o Menu -->
+		<div class="logo-uab">
+				<a tabindex="2" href="index.html">
+					<img id="logo-uab" alt="Logo Polo UAB Jales" src="imagens/uab-logo.png"  width="200px" height="100px"/>
+				</a>
+		</div>
+		<nav id="menu">
+			<ul id="menu-normal">
+				<li><a tabindex="10" href="index.html">Voltar para a Home</a></li>
+	 		</ul>
+		</nav>
+<!-- Ele faz com que uma div não entre na outra -->
+		<div class="clear"></div>
+	</header>
+	<article id="todas-graduacao">
+		<div class="todas-graduacao-geral">
+			<div class="todas-graduacao-geral-mt">
+				<img alt="banner do curso de lingua portuguesa e literatura" src="imagens/lingua-portugues-literatura.png">
+			</div>
+			<div class="todas-graduacao-geral-texto">
+			<h2>Apresentação do Curso</h2>
+				<p>
+					O curso de especialização em Ensino de língua portuguesa e literatura tem como público-alvo professores da Rede Básica. Ele está apoiado, essencialmente, em três linhas teóricas: análise e variação linguística, estudos de texto e discurso e literatura. O primeiro eixo  tem por objetivo o aprimoramento do conhecimento teórico do sistema linguístico, com ênfase nas variações linguísticas e na gramática que rege tais variações, a fim de que o pós-graduando possa ter melhor compreensão da complexidade de todo o sistema. Já o segundo eixo põe em relevo o caráter  discursivo da linguagem, discutindo noções de texto e discurso e suas implicações para o ensino-aprendizagem de língua materna e suas literaturas.  Quanto ao eixo voltado à Literatura, as reflexões objetivam proporcionar ao estudante uma visão ampla sobre o tema, de modo que possa entender a Literatura como fator integrador do homem na sociedade. Ainda, por meio de leituras tangenciadas com outras formas de expressão artística, o curso visa proporcionar um entendimento amplo dos aspectos culturais, semióticos e de ensino que envolvem o objeto de estudo.
+				</p>
+			<h2>Objetivo</h2>
+
+				<p>
+					O curso Especialização em Ensino de Língua Portuguesa e Literatura tem como objetivos:
+				<p>
+				<ul>
+					<li>Estimular o debate crítico em torno de questões sobre língua e literatura, relacionando as produções teóricas às práticas cotidianas de ensino;</li>
+					<li>Oferecer à comunidade um espaço de atualização dos conhecimentos em língua e literatura, proporcionando condições adequadas para a qualificação do profissional;</li>
+					<li>Proporcionar aos participantes cursos de qualidade, com profissionais reconhecidos por seu currículo acadêmico e profissional desenvolvido na UTFPR;</li>
+					<li>Promover a atualização de materiais e metodologias inovadoras a serem incorporadas na prática da sala de aula pelas escolas de origem;</li>
+					<li>Atender demandas de curso de especialização na área de língua portuguesa e literatura, de professores das disversas áreas, da região em que se situa o polo e adjacências, com o intuito de aprofundar conhecimentos na área em que atuam.</li>
+				</ul>	
+			<h2>Nível:</h2>
+				<p>Especialização</p>
+
+			<h2>Modalidade:</h2>
+				<p>Distância</p>
+
+			<h2>Duração média do curso:</h2>
+			<p>	18 meses</p>
+
+			<h2>Mais informações acesse o site:</h2>
+			<p><a tabindex="11" href="http://ead.utfpr.edu.br/editais/selecao">UTFPR - Língua Portuguesa e Literatura</a></p>
+			</div>
+		</div>			
+	</article>	
+	<div class="clear"></div>
+	<div class="clear"></div>
+		<!-- Rodapé -->
+	    <footer  id="rodape">
+				<div class="clear"></div>	
+					<p>Copyright © Thaís Silveira 2017, todos os direitos reservados.</p>
+					<div class="clear"></div>	
+		</footer>
+</section>
+</body>	
+<script type="text/javascript" src="js/altocontraste.js"></script>			
+</html>
